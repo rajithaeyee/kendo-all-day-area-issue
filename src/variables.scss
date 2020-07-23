@@ -1,0 +1,57 @@
+// -----------------------
+// global app variables
+// -----------------------
+
+// colors ----------------
+
+$primary_base: #00a99c;
+$primary_darken: #008075;
+$primary_background: #fff;
+
+$secondary: #38454f;
+$secondary_background: #f7f7f7;
+
+$dark_primary: #d4d5d7;
+$dark_secondary: #9d9ea0;
+
+//New Color themes
+$white:#fff;
+$primary:#000044;
+
+$primary-blue:#0099bb;
+$primary-light-blue: #4db8cf;
+
+$secondary-blue:#7fa0ae;
+$secondary-light-blue: #a5bdc6;
+
+$gray-100:#38454f;
+$gray-50:#606a72;
+$gray-25:#d9e3e7;
+
+$ag-green-25:#41ad49;
+$ag-red:#e3574d ;
+$ag-yellow:#ffb000;
+
+$ag-bg-white:#EFF0F0;
+
+$primary-button-hover:#4da5cf;
+$primary-button-disabled:#95d1df;
+
+$secondary-button-hover:#a0b9c3;
+$secondary-button-disabled:#c7d4da;
+
+//New Color themes
+
+
+// dimension -------------
+
+// 64px - the height of the top header panel
+$header_height: 40px;
+// the height of top menu bar
+$main_toolbar_height: 48px;
+// 48px - the height of the calender toolbar
+$calender_toolbar_height: 32px;
+// 57px - the height of the container panel
+$appointment_toolbar_height: 32px;
+// 45px - the height of the footer panel
+$appointment_footer_height: 45px;

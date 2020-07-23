@@ -1,0 +1,550 @@
+// -----------------------
+// global styles for app
+// -----------------------
+// plugin styles
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+
+// body,
+// button,
+// .ant-menu,
+// .ant-form,
+// .ant-input,
+// .ant-form-item,
+// .ant-anchor,
+// .ant-modal,
+// .ant-table,
+// .ant-collapse,
+// .ant-select{
+//   font-family: 'Open Sans', sans-serif;
+//   color:$gray-100;
+// }
+
+.right-align {
+  text-align: right;
+}
+
+/* Form label font size change */
+.ant-form {
+  label,
+  h4 {
+    font-weight: 700;
+    font-size: 13px;
+  }
+}
+
+a {
+  color: $primary-blue;
+}
+
+.bold-front{
+  font-weight: 600;
+}
+
+.default-front{
+  font-weight: 500 !important;
+}
+// height ------------
+.h-100{
+  height: 100%;
+}
+// height ------------
+// padding ---------------
+.pl-0{
+  padding-left:0!important;
+}
+.pr-0{
+  padding-right:0!important;
+}
+.pa-20 {
+  padding: 20px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pt-1 {
+  padding-top: 1px;
+}
+.pt-4 {
+  padding-top: 4px;
+}
+.pt-5 {
+  padding-top: 5px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+// margins ---------------
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+.mt-5 {
+  margin-top: 5px !important;
+}
+.mt-15 {
+  margin-top: 15px !important;
+}
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mb-15{
+  margin-bottom: 15px !important;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.ml-5{
+  margin-left: 5px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.ml-15{
+  margin-left: 15px;
+}
+.divider-space-0{
+  margin: 0;
+}
+// ag-button -----------
+
+.ag-button-primary {
+  background-color: #00a99d;
+  border-color: #00a99d;
+  color: white;
+}
+
+// event template styles -------
+
+.k-event {
+  border: 1px solid #cacaca !important;
+  box-shadow: 0 0 10px -4px #ddd;
+  padding-right: 0;
+}
+
+.k-animation-container {
+  .k-today .k-link {
+    border: 1px solid #00a99d;
+    color: #00a99d;
+    background-color: #ffffff;
+    font-weight: bold;
+  }
+
+  .k-weekend .k-link {
+    color: red;
+  }
+
+  .k-widget {
+    font-size: 10px;
+  }
+
+  .k-header .k-link {
+    caption-side: top;
+    color: black;
+    font-weight: 600;
+  }
+
+  .k-calendar-view {
+    padding: 5px;
+    width: 19em;
+    height: 18em;
+    th {
+      font-size: 10px !important;
+    }
+  }
+
+  .k-footer {
+    /* make them invisible */
+    display: none !important;
+  }
+
+  .k-state-selected .k-link {
+    color: #ffffff !important;
+    font-weight: 800;
+    background-color: $primary-blue;
+    border: none;
+  }
+}
+
+// border styles -----------
+.border-none {
+  border: none;
+}
+
+// ant elements css overrite
+.ant-checkbox-wrapper {
+  &:hover {
+    .ant-checkbox-inner {
+      border-color: $primary-blue;
+    }
+  }
+}
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+  background-color: transparent !important;
+  border-color: $gray-50 !important;
+}
+.ant-checkbox-inner {
+  border: solid 1px;
+}
+.ant-checkbox-checked,
+.ant-tree-checkbox-checked {
+  .ant-tree-checkbox-inner,
+  .ant-checkbox-inner {
+    &:after {
+      border-color: $primary-blue;
+    }
+  }
+}
+.ant-radio-checked .ant-radio-inner {
+  border-color: $gray-50 !important;
+}
+
+.ant-radio-inner:after {
+  background-color: $primary-blue ;
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner:after {
+  background-color: $primary-blue !important;
+}
+
+//kendo scheduler margin set to 0
+kendo-scheduler .k-event .k-event-actions:first-child,
+.k-event .k-event-actions:first-child {
+  margin: 0px 0.4ex 0 4px !important;
+}
+
+// Icons properties
+.ag-icon-plus {
+  cursor: pointer;
+  .icon {
+    font-size: 13px;
+    color: #00a99d;
+  }
+  .text {
+    font-size: 13px;
+    margin: 0;
+    font-weight: 700;
+    margin-left: 5px;
+    position: absolute;
+  }
+}
+
+.disabled-icon-color {
+  color: #d2d2d2 !important;
+}
+
+// Scroll bar ------------------------------
+
+.ag-scroll-bar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.ag-scroll-bar::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+.ag-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+}
+
+// scroll bar for specific scenario - scheduler
+.k-scheduler-content::-webkit-scrollbar {
+  width: 17px;
+}
+
+.k-scheduler-content::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+.k-scheduler-content::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+}
+
+.ant-calendar-disabled-cell.ant-calendar-today .ant-calendar-date:before {
+  content: " ";
+  position: absolute;
+  top: -1px;
+  left: 5px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 2px;
+}
+
+.ant-calendar-disabled-cell.ant-calendar-today .ant-calendar-date {
+  position: relative;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.ant-calendar-disabled-cell-last-of-row .ant-calendar-date {
+  border-radius: 2px;
+}
+
+.ant-calendar-today .ant-calendar-date {
+  width: 24px;
+  height: 24px;
+}
+
+.k-calendar .k-state-selected.k-state-focused .k-link {
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0);
+}
+.ant-calendar-today .ant-calendar-date {
+  border-color: $primary-blue !important;
+  color: $primary-blue;
+}
+.ant-calendar-selected-date .ant-calendar-date,
+.ant-calendar-selected-start-date .ant-calendar-date,
+.ant-calendar-selected-end-date .ant-calendar-date {
+  background: $primary-blue !important;
+  font-weight: 700;
+}
+.ant-modal-header {
+  background: $primary;
+  height: 54px;
+  padding: 10px 24px;
+  .Title {
+    color: white;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+  }
+  .close-text {
+    color: white;
+    font-size: 10pt;
+    font-weight: initial;
+  }
+}
+
+.ant-modal-close {
+  color: white;
+}
+.ant-modal-close-x {
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+}
+// ----------------------------------------
+.ant-switch {
+  background-color: $secondary-blue;
+}
+.ant-switch-checked {
+  background-color: $primary-blue;
+}
+// label box colors
+
+%label-box {
+  font-weight: 100 !important;
+  font-size: 14px !important;
+  padding: 2px 10px;
+  border-radius: 5px;
+  color: $white;
+}
+.accepted {
+  @extend %label-box;
+  background-color: $ag-green-25;
+}
+.declined {
+  @extend %label-box;
+  background-color: $ag-red;
+}
+.unconfirm {
+  @extend %label-box;
+  background-color: $primary-blue;
+}
+// ant table header font bold
+.ant-table-thead > tr > th{
+  font-weight: bold;
+  font-size: 13px;
+}
+.TemplateDropDown{
+  font-size: 11px;
+  .k-selectable{
+    border-color: transparent !important;
+  }
+  .k-item:hover{
+    color: #0099bb !important;
+    background-color: transparent;
+  }
+  .k-item.k-state-selected{
+    color:black;
+    background-color: transparent;
+  }
+
+  .k-item.k-state-selected:hover{
+    color: #0099bb !important;
+    background-color: transparent;
+  }
+}
+
+li.k-item.k-drag-clue{
+  font-size: 11px;
+  color:#0099bb !important;;
+  background-color:rgba(255,255,255, 0.1);
+}
+
+// calender - add scroll bar for all day area
+.k-scheduler-table.k-scheduler-header-all-day td,
+.k-scheduler-table th.k-scheduler-times-all-day {
+  height:10px;
+}
+
+.k-scheduler-table.k-scheduler-header-all-day td {
+  font-size: 1px;
+}
+
+.k-scheduler-table th.k-scheduler-times-all-day {
+  padding: 2px;
+}
+
+.k-scheduler-layout tbody tr:first-child td{
+  .k-scheduler-times{
+    max-height: 250px;
+    min-height: 25px;
+    }
+}
+// .k-scheduler-table tbody tr:last-child{
+//   max-height: 250px!important;
+// }
+
+.k-scheduler-header-wrap>div{
+    max-height: 166px;
+   // min-height: 25px;
+    overflow-y: auto!important;
+    scrollbar-width:thin;
+    &::-webkit-scrollbar {
+     position: absolute;
+      width: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #ffffff;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #d9d9d9;
+    }
+}
+
+// ant notification message style
+.ant-notification-notice {
+  position: relative;
+    margin-bottom: 16px;
+    padding: 16px 24px;
+    overflow: hidden;
+    line-height: 1.5;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+}
+
+// nonwoking hours background color change 
+// .k-today{
+//   background-color: #f0f0f0;
+// }
+.k-nonwork-hour {
+  background-color: #f0f0f0;
+}
+
+// Extension section date of death validation alignmnet fixed
+.inline-validation .has-error .ant-form-explain{
+  width: 176px;
+}
+form .inline-validation .has-feedback .ant-input{
+  padding-right:11px;
+}
+form .inline-validation .has-feedback .ant-calendar-picker-clear{
+  right: 9px;
+}
+
+// calender, all day background color chnage 
+.k-scheduler-times-all-day,
+table.k-scheduler-table.k-scheduler-header-all-day{
+  background-color: ghostwhite;
+}
+// .ant-spin-blur{
+//   opacity: 0.1;
+// }
+
+// dropdown menu scrollbar
+.ant-menu-submenu{
+  ul.ant-menu{
+      // max-height:500px;
+      max-height: calc(100vh - 145px);
+      overflow-y: auto;
+
+  } 
+}
+
+.ant-layout{
+  .navBar{
+    z-index:500;
+  }
+}
+
+
+

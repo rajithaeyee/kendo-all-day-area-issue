@@ -1,0 +1,93 @@
+.event-template {
+  height: 100%;
+
+  .event-status-top-bar {
+    height: 3px;
+    width: 100%;   
+
+    .event-status-icon {
+      width: 12px;
+      position: absolute;
+      right: 5px;
+      top: 7px;
+    }
+  }
+
+  .event-top-bar {
+    height: 0px;
+    width: 100%;  
+
+    .event-status-icon {
+      width: 12px;   
+      position: absolute;  
+      right: 5px;
+      top: 7px;
+    }
+  }
+  .event-status-icon-table{
+    width: 22px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background-color: #fff;
+    padding: 3px 6px 0 3px;
+  }
+  .event-grid {
+    display: flex;
+    height: -webkit-fill-available;
+
+    .event-left-panel {
+      display: flex;   
+
+      .event-side-bar {
+        width: 8px;
+        height: 100%;
+      }
+    }
+
+    .event-details {
+      padding-left: 5px;
+
+      .icon-list {
+        .event-icon {
+          width: 12px;
+          margin-right: 2px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+
+  .event-allday-grid {
+    display: flex;   
+
+    .event-allday-left-panel {
+      display: flex;   
+
+      .event-allday-side-bar {
+        width: 8px;
+        height: 125%;
+      }
+    }
+    .event-allday-details {
+      padding-left: 5px;
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;     
+    }
+  }
+
+  .options-icon {
+    cursor: pointer;
+    width: 14px;
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+  }
+}
+
